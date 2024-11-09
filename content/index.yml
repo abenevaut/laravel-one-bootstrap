@@ -1,0 +1,10 @@
+view: home
+language: en
+seo:
+  title: laravel-one bootstrap
+  description: laravel-one, tool to generate static webpages with blade
+  keywords: laravel-one, laravel-one-bootstrap
+  author: Antoine Benevaut
+
+title: laravel-one bootstrap
+content: My content
