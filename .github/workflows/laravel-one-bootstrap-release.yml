@@ -21,13 +21,7 @@ jobs:
           fetch-depth: 0
 
       - name: Generate static pages
-        uses: abenevaut/opensource/laravel-one@master
+        uses: abenevaut/laravel-one@0.5.0
         with:
           url: https://laravel-one-bootstrap.abenevaut.dev
           php-version: ${{ env.php_version }}
-
-#      - uses: JamesIves/github-pages-deploy-action@v4
-#        with:
-#          token: ${{ secrets.ABENEVAUT_GITHUB_TOKEN }}
-#          branch: gh-pages
-#          folder: dist
