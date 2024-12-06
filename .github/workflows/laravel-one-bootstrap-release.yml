@@ -21,7 +21,7 @@ jobs:
           fetch-depth: 0
 
       - name: Generate static pages
-        uses: abenevaut/opensource/laravel-one/laravel-one@master
+        uses: abenevaut/opensource/laravel-one/laravel-one
         with:
           url: https://laravel-one-bootstrap.abenevaut.dev
 
