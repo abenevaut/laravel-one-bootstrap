@@ -1,0 +1,33 @@
+name: laravel-one-bootstrap-release
+
+on:
+  push:
+    branches: [ master ]
+
+env:
+  php_version: 8.3
+
+jobs:
+
+  publish-pages:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: laravel-one-bootstrap-publish-pages-${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: false
+    steps:
+
+      - name: Checkout project
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate static pages
+        uses: abenevaut/opensource/laravel-one/laravel-one@master
+        with:
+          url: https://laravel-one-bootstrap.abenevaut.dev
+
+#      - uses: JamesIves/github-pages-deploy-action@v4
+#        with:
+#          token: ${{ secrets.ABENEVAUT_GITHUB_TOKEN }}
+#          branch: gh-pages
+#          folder: dist
