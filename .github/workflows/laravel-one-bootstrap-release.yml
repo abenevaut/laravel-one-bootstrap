@@ -24,6 +24,7 @@ jobs:
         uses: abenevaut/opensource/laravel-one@master
         with:
           url: https://laravel-one-bootstrap.abenevaut.dev
+          php-version: ${{ env.php_version }}
 
 #      - uses: JamesIves/github-pages-deploy-action@v4
 #        with:
