@@ -1,8 +1,8 @@
 name: laravel-one-bootstrap-release
 
-#on:
-#  release:
-#    types: [ created ]
+on:
+  push:
+    branches: [ master ]
 
 env:
   php_version: 8.3
