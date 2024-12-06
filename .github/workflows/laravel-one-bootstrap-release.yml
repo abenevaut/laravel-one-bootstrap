@@ -1,8 +1,7 @@
 name: laravel-one-bootstrap-release
 
 on:
-  push:
-    branches: [ master ]
+  workflow_dispatch:
 
 env:
   php_version: 8.3
